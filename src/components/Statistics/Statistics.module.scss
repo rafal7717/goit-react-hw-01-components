@@ -1,10 +1,13 @@
 .statistics {
-  width: 300px;
-  background-color: #f7f7f7;
+  max-width: 300px;
+  width: 100%;
+  margin-bottom: 15px;
+}
 
+.statistics {
   &__title {
     padding: 26px 0;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     line-height: 1.125;
     text-transform: uppercase;
@@ -14,18 +17,17 @@
 
   &__list {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    justify-content: space-between;
     list-style-type: none;
   }
 
   &__item {
-    width: 60px;
-    padding-block: 10px;
-    padding-inline: 15px;
+    width: 100%;
+    padding-top: 7px;
+    padding-bottom: 10px;
     text-align: center;
     color: #ffffff;
+    text-shadow: -1px 1px 0px rgb(50, 50, 50), 1px 1px 0px rgb(50, 50, 50), 1px -1px 0px rgb(50, 50, 50), -1px -1px 0px rgb(50, 50, 50);
   }
 
   &__label {

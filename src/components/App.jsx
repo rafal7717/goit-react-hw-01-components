@@ -1,3 +1,4 @@
+import { Wrapper } from './Wrapper/Wrapper';
 
 import { Profile } from './Profile/Profile';
 import user from './Profile/user.json';
@@ -14,7 +15,7 @@ import transactions from './Transactions/transactions.json';
 
 export const App = () => {
   return (
-    <>
+    <Wrapper>
       <Profile
         username={user.username}
         tag={user.tag}
@@ -26,6 +27,6 @@ export const App = () => {
       <FriendList friends={friends} />
       <Statistics title="Upload stats" stats={data} />
       <TransactionHistory items={transactions} />;
-    </>
+    </Wrapper>
   );
 };
